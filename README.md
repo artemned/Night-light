@@ -8,7 +8,7 @@
 ### *A special [MicroCore](https://github.com/MCUdude/MicroCore) kernel helped me write the code and load it into the microcontroller. There is nothing complicated in this, everything is clearly and clearly described step by step on the project page. I myself made such a programmer and used him over arduino UNO.*
 <img src=https://github.com/artemned/Night-light/blob/main/Night%20light/Night_light_view/attiny_view_one.jpg  width="400" height="400" > <img src=https://github.com/artemned/Night-light/blob/main/Night%20light/Night_light_view/attiny_view_two.jpg width="400" height="400" >
 
-### *P.S. All goodness and fresh cookies!*
+### *P.S. Everyone goodness and fresh cookies!*
  
  ### *License: [Free license](https://github.com/artemned/Night-light/blob/main/LICENSE)*
  
