@@ -5,7 +5,7 @@
 <img src=https://github.com/artemned/Night-light/blob/main/Night%20light/Night_light_view/Night_light%20v14.png >
 
 
-* ### *Setting up the connection*
+### A special [MicroCore](https://github.com/MCUdude/MicroCore) kernel helped me write the code and load it into the microcontroller https://github.com/MCUdude/MicroCore. There is nothing complicated in this, everything is clearly and clearly described step by step on the project page. I myself made such a programmer.
 <img src=> 
  
  * ### *Control panel*
