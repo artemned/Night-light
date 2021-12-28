@@ -53,7 +53,7 @@ bool pressed_button(bool last,int pin)
     {
       case Off:digitalWrite(PWM_ONE,LOW);digitalWrite(PWM_TWO,LOW);
       break;
-      case On:digitalWrite(PWM_ONE,HIGH);digitalWrite(PWM_TWO,HIGH);
+      case On:analogWrite(PWM_ONE,digitalRead(myPin)/4);analogWrite(PWM_TWO,digitalRead(myPin)/4);
       break;
       default: break;
     } 
@@ -64,11 +64,11 @@ bool pressed_button(bool last,int pin)
  {
       switch(mode_)
       {
-        case Left_light:digitalWrite(PWM_ONE,digitalRead(myPin)/4);digitalWrite(PWM_TWO,LOW);
+        case Left_light:analogWrite(PWM_ONE,digitalRead(myPin)/4);digitalWrite(PWM_TWO,LOW);
         break;
-        case Right_light:digitalWrite(PWM_ONE,LOW);digitalWrite(PWM_TWO,digitalRead(myPin)/4);
+        case Right_light:digitalWrite(PWM_ONE,LOW);analogWrite(PWM_TWO,digitalRead(myPin)/4);
         break;
-        case Both_lights:digitalWrite(PWM_ONE,digitalRead(myPin)/4);digitalWrite(PWM_TWO,digitalRead(myPin)/4);  
+        case Both_lights:analogWrite(PWM_ONE,digitalRead(myPin)/4);analogWrite(PWM_TWO,digitalRead(myPin)/4);  
         break;
         default:break;
       
