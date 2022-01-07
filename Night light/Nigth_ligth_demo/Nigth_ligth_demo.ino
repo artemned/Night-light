@@ -23,8 +23,8 @@ bool last_button_mode = false;
 //enumeration 
 enum state_nigth_light
 {
-  On,
-  Off
+  Off,
+  On
 };
 
 enum mode_nigth_light
@@ -59,7 +59,7 @@ bool pressed_button(bool last,int pin)
     } 
   
  }
- 
+
  void toggling_mode_nigth_light(mode_nigth_light mode_)
  {
       switch(mode_)
@@ -75,7 +75,7 @@ bool pressed_button(bool last,int pin)
       }  
  }
 
- state_nigth_light state = state_nigth_light::On; //start state
+ state_nigth_light state = state_nigth_light::Off; //start state
  mode_nigth_light mode = mode_nigth_light::Left_light;
 
 //setup pins
@@ -98,19 +98,23 @@ void loop()
   
   if(last_button_on_off==false && current_button_on_off==true)
   {   
-      configurate_current_state(state);      
+      state=static_cast<state_nigth_light>(!state);
+      configurate_current_state(state);
+            
   }   
+ 
   last_button_on_off = current_button_on_off;
-  state!=state;
-  
-  if(last_button_mode==false && current_button_mode==true)
-  {
-    toggling_mode_nigth_light(mode);
-    count_pressed++;
     
-  }
-  last_button_mode=current_button_mode;
-  if(count_pressed>2)count_pressed=0;
-  mode=static_cast<mode_nigth_light>(count_pressed);
-     
+  if(state)
+  {
+   if(last_button_mode==false && current_button_mode==true)
+   {
+     toggling_mode_nigth_light(mode);
+     count_pressed++;    
+   }
+   last_button_mode=current_button_mode;
+   if(count_pressed>2)count_pressed=0;
+   mode=static_cast<mode_nigth_light>(count_pressed);
+  } 
+
 }
