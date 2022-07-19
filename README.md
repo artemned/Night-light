@@ -5,7 +5,7 @@
 <img src=https://github.com/artemned/Night-light/blob/main/Night%20light/Night_light_view/Night_light%20v1.jpg >
 
 
-### *A special [MicroCore](https://github.com/MCUdude/MicroCore) kernel helped me write the code and load it into the microcontroller. There is nothing complicated in this, everything is clearly and clearly described step by step on the project page. I myself made such a programmer and used him over arduino UNO.*
+### *A special [MicroCore](https://github.com/MCUdude/MicroCore) kernel helped me write the code and load it into the microcontroller. There is nothing complicated in this, everything is clearly and clearly described step by step on the project page. I myself made such a programmer and used him over arduino UNO.For those who do not use the Arduino IDE and take a different approach, you should go to the AVR_code directory: firmware file (NightLight.hex), and files for self-assembly of the project.*
 <img src=https://github.com/artemned/Night-light/blob/main/Night%20light/Night_light_view/attiny_view_one.jpg  width="450" height="400" > <img src=https://github.com/artemned/Night-light/blob/main/Night%20light/Night_light_view/attiny_view_two.jpg width="450" height="400" >
 
 ### *P.S. Everyone goodness and fresh cookies!*
