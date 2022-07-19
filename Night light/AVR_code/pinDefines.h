@@ -1,13 +1,7 @@
 /********************************************************************
 	created:	2022/07/01
 	created:	1:7:2022   10:58
-	filename: 	C:\Users\sWe\Documents\Atmel Studio\7.0\pinDefines.h
-	file path:	C:\Users\sWe\Documents\Atmel Studio\7.0
-	file base:	pinDefines
-	file ext:	h
-	author:		ArtNeko.LAB
-	
-	purpose:	
+	author:		ArtNeko
 *********************************************************************/
 #pragma once
 
